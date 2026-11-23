@@ -50,11 +50,10 @@ body {
 .log {
     height: 40px;
     width: 100%;
-    /* background-color: antiquewhite; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+
 }
 
 .log img {
@@ -135,5 +134,102 @@ body {
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
-    
+
+}
+
+.user {
+    height: 100px;
+    width: 90%;
+    /* background-color: black; */
+    margin-left: 35px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.date {
+    height: 40px;
+    width: 160px;
+    background-color: rgba(191, 205, 202, 0.975);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-radius: 5px;
+}
+
+.date p {
+    font-size: 12px;
+}
+
+.date-img {
+    height: 90%;
+    width: 40px;
+}
+
+.date-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.input-task-bar {
+    margin-left: 35px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: rgb(105, 131, 129);
+    padding: 8px 8px 8px 8px;
+    border-radius: 999px;
+    box-shadow: 0 8px 24px rgba(59, 43, 214, 0.08);
+    border: 1px solid rgba(59, 43, 214, 0.08);
+    max-width: 720px;
+  width: 87%;
+}
+.plus{
+  
+    height: 34px;
+    width: 34px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    background-color: #b3b0be;
+    color: #473c3c;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+.task-input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background:transparent;
+    font-size: 16px;
+    color: #1f2937;
+    min-height: 0;
+}
+.task-input::placeholder{
+    color: #9ca3af;
+}
+.add-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 7 px;
+    background-color: #d9d7df;
+    border: none;
+    outline: none;
+    border-radius: 999px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease;
+}
+.add-btn:hover{
+    background-color: #ffffff;
 }
