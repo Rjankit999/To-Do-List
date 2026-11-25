@@ -53,6 +53,25 @@ addBtn.addEventListener("click", function () {
         deleteImg.addEventListener("click", function () {
             newTask.remove();
         });
+
+
+        let editButton=document.createElement("div");
+        editButton.className="edit-button";
+
+        let editImg=document.createElement("img");
+        editImg.src="./edit.png";
+
+        editButton.appendChild(editImg);
+        actionBtn.appendChild(editButton);
+
+        editImg.addEventListener("click", function(){
+            let updateTask=prompt("Enter new task name:");
+            if(updateTask !==null && updateTask.trim() !==""){
+                title.innerText=updateTask;
+            }
+        });
+
+        let cat
     }
 
 });
