@@ -37,6 +37,45 @@ addBtn.addEventListener("click", function () {
 
             }
         });
+
+                let category=document.createElement("select");
+        category.className="category-section";
+
+        let option1=document.createElement("option");
+        option1.value="";
+        option1.innerText="Select Category";
+
+        let option2=document.createElement("option");
+        option2.value="Important";
+        option2.innerText="⭐Important";
+
+        let option3=document.createElement("option");
+        option3.value="Work";
+        option3.innerText="Work";
+        
+        let option4=document.createElement("option");
+        option4.value="Study";
+        option4.innerText="Study";
+
+        let option5=document.createElement("option");
+        option5.value="Projec";
+        option5.innerText="Projec";
+
+
+        let option6=document.createElement("option");
+        option6.value="Other";
+        option6.innerText="Other";
+
+        category.appendChild(option1);
+        category.appendChild(option2);
+        category.appendChild(option3);
+        category.appendChild(option4);
+        category.appendChild(option5);
+        category.appendChild(option6);
+        category.appendChild(option6);
+        newTask.appendChild(category);
+
+
         let actionBtn = document.createElement("div");
         actionBtn.classList = "action-button";
 
@@ -71,7 +110,7 @@ addBtn.addEventListener("click", function () {
             }
         });
 
-        let cat
+
     }
 
 });
