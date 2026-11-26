@@ -76,6 +76,13 @@ addBtn.addEventListener("click", function () {
         newTask.appendChild(category);
 
 
+        // add date secstion.....
+        let dueDate=document.createElement("input");
+        dueDate.type="date";
+        dueDate.className="task-date";
+
+        newTask.appendChild(dueDate);
+
         let actionBtn = document.createElement("div");
         actionBtn.classList = "action-button";
 
@@ -109,6 +116,8 @@ addBtn.addEventListener("click", function () {
                 title.innerText=updateTask;
             }
         });
+
+      
 
 
     }
