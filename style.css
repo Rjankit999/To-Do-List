@@ -468,4 +468,20 @@ body {
 }
 
 
+/* Live date */
+
+.live-date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.live-date p{
+    font-size: 14;
+    color: gray;
+    margin: 0;
+}
+
+
+
 

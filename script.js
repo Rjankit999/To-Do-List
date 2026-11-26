@@ -141,6 +141,20 @@ fillterCategory.addEventListener("change", function () {
     });
 });
 
+//Time section 
 
 
+function updateDate() {
+    let now = new Date();
+    console.log(now);
 
+    document.getElementById("currantDate").innerText=now.toLocaleDateString("en-IN"{
+        weekday:"short",
+        day: "2-digit",
+        month:"short",
+        year:"numeric"
+    });
+
+    updateDate();
+    setInterval(updateDate,60000);
+}
