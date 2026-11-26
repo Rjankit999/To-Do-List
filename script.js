@@ -58,8 +58,8 @@ addBtn.addEventListener("click", function () {
         option4.innerText="Study";
 
         let option5=document.createElement("option");
-        option5.value="Projec";
-        option5.innerText="Projec";
+        option5.value="Project";
+        option5.innerText="Project";
 
 
         let option6=document.createElement("option");
@@ -117,10 +117,27 @@ addBtn.addEventListener("click", function () {
             }
         });
 
-      
-
-
+        
     }
 
+
 });
+
+// Category section .......
+
+        let fillterCategory =document.querySelector(".fillter-category");
+        fillterCategory.addEventListener("change", function(){
+            let selectCategory=fillterCategory.value;
+            let allTaks=document.querySelectorAll(".task-section-hendling");
+
+            allTaks.forEach(function(task){
+                let taskCategory=task.querySelector(".category-section").value;
+                if(selectCategory==="All" || selectCategory===taskCategory){
+                    task.style.display="flex";
+                }
+                else{
+                    task.style.display="none";
+                }
+            });
+        });
 
