@@ -384,6 +384,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    z-index: 1;
 
 }
 
@@ -485,3 +486,11 @@ body {
 
 
 
+.futter-secton{
+    margin: 50px;
+    margin-top: 10%;
+    height: 200px;
+    width: 95%;
+    background-color: #011c40;
+    z-index: 1;
+}
